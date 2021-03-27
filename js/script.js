@@ -5,7 +5,7 @@ function(event) {
         $ajaxUtils
         .sendGetRequest("/test-repo/data/name.txt",
         function(request) {
-            var name = request.responeText;
+            var name = request.responseText;
             console.log(name);
             document.querySelector("#content")
             .innerHTML = "<h2>Hello " +name + "!";
