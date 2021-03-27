@@ -3,7 +3,7 @@ function(event) {
     document.querySelector("button")
     .addEventListener("click",function() {
         $ajaxUtils
-        .sendGetRequest("../../data/name.txt",
+        .sendGetRequest("/test-repo/data/name.txt",
         function(request) {
             var name = request.responeText;
             console.log(name);
